@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <header class="header">
+    <h1 id="title">freeCodeCamp Survey</h1>
+    <p id="description">Answer the questions</p> 
+    </header>
+<div class="total">
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form" class="form">
+    
+    <div class="information">
+    <!--<fieldset>-->
+        <label for="name" id="name-label">Name <input type="text" class="styling" id="name" name="name" placeholder="Enter your name: " required></label>
+
+        <label for="email" id="email-label">Email <input type="email" class="styling" id="email" name="email" placeholder="Enter your email: "  required></label>
+
+        <label for="number" id="number-label">Age <input type="number" class="styling" id="number" name="age" min="13" max="120" placeholder="Enter your age (optional):"></label>
+        <label for="dropdown">What is your professional status? <select id="dropdown">
+
+            <option value="">Select your status</option>
+            <option value="1" name="consectetur">consectetur adipiscing elit</option>
+            <option value="2" name="sed so">sed do eiusmod tempor incidi</option>
+            <option value="3" name="et dolore">et dolore magna aliqua</option>
+
+        </select>
+        </label>
+    <!--</fieldset>-->
+    </div>  
+    <div class="favourites">
+    <!--<fieldset>-->
+        <label>What are your favorite coding languages?</label>
+        <label for="html"><input type="checkbox"  id="html" class="inline styling" name="html" value="html">HTML</label>
+        <label for="css"><input type="checkbox"  id="css" class="inline styling" name="css" value="css">CSS</label>
+        <label for="javascript"><input type="checkbox" id="javascript" class="inline styling" name="javascript"    value="javascript">Javascript</label>
+        <label for="python"><input type="checkbox" id="python" class="inline styling" name="python" value="python">Python</label>
+    <!--</fieldset>-->
+    </div>
+    <div class="extra">
+   <!--<fieldset>-->
+        <label> Extra input? Tell us!
+            <textarea id="text" placeholder="Do you have any input for us?"></textarea>
+        </label>
+    <!--</fieldset>-->
+    </div>
+    <div class="recommend">
+    <!--<fieldset>-->
+        
+        <label>Would you recommend us?</label>
+        <label><input type="radio" class="inline" name="choice" value="yes" checked> Yes</label>
+        <label><input type="radio" class="inline" name="choice" value="no"> No</label>
+        <label><input type="radio" class="inline" name="choice" value="maybe"> Maybe</label>
+    <!--</fieldset>-->
+    </div>
+    <div class="submit-button">
+    <input type="submit" value="Submit your life" id="submit" >
+    </div>
+</form>
+</div>
+</body>
+</html>
